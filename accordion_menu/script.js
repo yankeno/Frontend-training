@@ -1,3 +1,4 @@
+const menu = document.getElementsByClassName("link");
 const list = document.getElementById("accordion").children;
 const removeOthersElmOpenClass = (index) => {
   // open を付与した要素以外は open を削除
@@ -8,7 +9,7 @@ const removeOthersElmOpenClass = (index) => {
   }
 };
 for (let i = 0; i < list.length; i++) {
-  list[i].addEventListener("click", () => {
+  menu[i].addEventListener("click", () => {
     list[i].classList.toggle("open");
     removeOthersElmOpenClass(i);
   });
