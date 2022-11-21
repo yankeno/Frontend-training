@@ -13,10 +13,10 @@
 
 ## 要点
 
-- grid レイアウトの `row` と `column` を決め、1 つの grid の幅と高さを決める
+- `row` と `column` の数を決め、1 つのセルの幅と高さを決める
   - `grid-template-rows`
   - `grid-template-columns`
-- row と column のラインを指定することでとラックの配置を決める
+- row と column のラインを指定することでトラックの配置を決める
   - `grid-row`
   - `grid-column`
 
