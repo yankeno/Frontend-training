@@ -1,0 +1,80 @@
+.hamburger {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 300;
+}
+
+.hamburger-line {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  right: 0;
+  background-color: #000;
+  transition: all 0.5s;
+}
+
+.hamburger-line1 {
+  top: 1px;
+}
+
+.hamburger-line2 {
+  top: 8px;
+}
+
+.hamburger-line1 {
+  top: 16px;
+}
+
+.open .hamburger-line1 {
+  transform: rotate(-45deg);
+  top: 11px;
+}
+
+.open .hamburger-line2 {
+  opacity: 0;
+}
+
+.open .hamburger-line3 {
+  transform: rotate(45deg);
+  top: 11px;
+}
+
+.sp-nav {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 70%;
+  height: 100vh;
+  background-color: #fff;
+  transition: all 0.5s;
+  z-index: 200;
+  overflow-y: auto;
+}
+
+.open .sp-nav {
+  right: 0;
+}
+
+.bg-black {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.open .bg-black {
+  opacity: 0.3;
+  visibility: visible;
+}
